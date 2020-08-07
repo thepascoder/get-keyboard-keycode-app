@@ -19,4 +19,5 @@ to check out too.
 
 you can checkout the [Keyboard key code app](https://thepascoder.github.io/get-keyboard-keycode-app/) 
 
-(hi, this right here is me lerning how to write a README.md file. So here's my first thanks.)
+> Hi all, this right here is me learning how to write a README.md file. So 
+> here's my first. Thanks.

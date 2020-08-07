@@ -1,0 +1,61 @@
+r
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Keyboard Key Code</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="code" id="kbdCode">:)</div>
+        <p style="display:inline-block" class="btn" id="kbdKey">ENTER ANY KEYBOARD-KEY TO VIEW THEIR KEY CODE</p>
+    </div>
+    <style>
+        :root {
+            font-size: 20px;            
+            /* text-align: center; */
+            background-color: rgb(58, 161, 175);
+        }
+
+        .code {
+            color: white;
+            font-size: 17rem;
+            font-family: cursive;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .btn {
+            padding: 10px;
+            font-family: cursive;
+            color: black;
+            border: 3px solid rgb(21, 61, 75);
+            border-radius: 5px;
+            font-size: 1rem;
+            background: rgb(198, 198, 230);
+        }
+    </style>
+    <script>
+        let kbdKey = document.getElementById('kbdKey');
+        let kbdCode = document.getElementById('kbdCode')
+        window.addEventListener('keydown', function (e) {
+            kbdCode.innerText = e.keyCode;
+            console.log(e);
+            if (e.key === 'Meta') {
+                kbdKey.innerText = 'Windows /Meta key';
+            } else if (e.key === ' ') {
+                kbdKey.innerText = 'Space Bar';
+            } else {
+                kbdKey.innerText = e.key;
+            };
+        });
+    </script>
+</body>
+
+</html>
